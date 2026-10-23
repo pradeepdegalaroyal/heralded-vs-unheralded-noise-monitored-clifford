@@ -1,0 +1,11 @@
+none q=0.0 done (32s)
+dephasing q=0.002 done (77s)
+dephasing q=0.005 done (122s)
+dephasing q=0.02 done (169s)
+erasure_unheralded q=0.002 done (214s)
+erasure_unheralded q=0.005 done (258s)
+erasure_unheralded q=0.02 done (308s)
+erasure_heralded q=0.002 done (354s)
+erasure_heralded q=0.005 done (398s)
+erasure_heralded q=0.02 done (445s)
+total 451s

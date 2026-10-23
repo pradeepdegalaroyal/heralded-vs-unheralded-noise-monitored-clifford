@@ -1,0 +1,12 @@
+[project]
+name = "monitored-codes"
+version = "0.1.0"
+description = "Coherent information in monitored Clifford circuits under heralded and unheralded noise"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
