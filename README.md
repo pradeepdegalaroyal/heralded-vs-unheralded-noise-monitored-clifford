@@ -64,4 +64,18 @@ Related work by the author: [xy-mixer-vs-penalty-qaoa-noise-crossover](https://g
 `src/monitored_codes/` simulator and circuit; `experiments/run_all.py`; `tests/`; `docs/`; `results/`; `figures/`.
 
 ## Citation
-See `CITATION.cff`. License: MIT.
+
+If you use this code, please cite it (see also `CITATION.cff`):
+
+```bibtex
+@software{chenchupradeep2026heraldedvsun,
+  author  = {Chenchupradeep, Degala},
+  title   = {Heralded vs unheralded noise in monitored Clifford circuits},
+  year    = {2026},
+  version = {0.1.0},
+  url     = {https://github.com/pradeepdegalaroyal/heralded-vs-unheralded-noise-monitored-clifford},
+  license = {MIT}
+}
+```
+
+MIT license (`LICENSE`).
