@@ -1,6 +1,6 @@
 # Method
 
-- **Simulator:** sign-free mixed stabiliser states over GF(2) (own implementation, `src/monitored_codes/stabilizer.py`); entropies via S_A = |A| − dim(G_A). Two-qubit gates are drawn uniformly from Sp(4,2) (720 elements) on a brickwork chain with open boundaries.
+- **Simulator:** sign-free mixed stabiliser states over Galois field of two elements, GF(2) (own implementation, `src/monitored_codes/stabilizer.py`); entropies via S_A = |A| − dim(G_A). Two-qubit gates are drawn uniformly from Sp(4,2) (720 elements) on a brickwork chain with open boundaries.
 - **Layer:** random Clifford gates → recorded Z measurement per qubit with prob. p → noise event per qubit with prob. q. Depth 2L.
 - **Noise channels:** dephasing (unrecorded Z measurement); unheralded erasure (qubit traced out, left maximally mixed); heralded erasure (traced out, reset to |0>).
 - **Baselines:** (i) the noiseless monitored circuit (standard measurement-induced-transition setting), (ii) the p = 0 unitary-only circuit (I_c = 1 by construction); the unheralded channel is the classical "unknown error location" baseline against the heralded one.

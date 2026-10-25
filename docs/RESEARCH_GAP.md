@@ -2,7 +2,7 @@
 
 ## State of the art (from the supplied literature)
 - Random and monitored circuits are a central model of entanglement dynamics; measurements compete with scrambling and can drive entanglement phase transitions (Fisher et al., 2023, doi:10.1146/annurev-conmatphys-031720-030658).
-- Experiments now run real-time error correction near break-even (Sivak et al., 2023, doi:10.1038/s41586-023-05782-6), report the open question of whether QEC can extend coherence in practice, and demonstrate mid-circuit erasure conversion, i.e. turning errors into *located* ones (Ma et al., 2023, doi:10.1038/s41586-023-06438-1), with parallel 99.5% two-qubit gates on neutral atoms (Evered et al., 2023, doi:10.1038/s41586-023-06481-y).
+- Experiments now run real-time error correction near break-even (Sivak et al., 2023, doi:10.1038/s41586-023-05782-6), report the open question of whether quantum error correction (QEC) can extend coherence in practice, and demonstrate mid-circuit erasure conversion, i.e. turning errors into *located* ones (Ma et al., 2023, doi:10.1038/s41586-023-06438-1), with parallel 99.5% two-qubit gates on neutral atoms (Evered et al., 2023, doi:10.1038/s41586-023-06481-y).
 - Quantum-information protection across a network is limited by loss and noise (Azuma et al., 2023, doi:10.1103/RevModPhys.95.045006).
 
 ## Gap

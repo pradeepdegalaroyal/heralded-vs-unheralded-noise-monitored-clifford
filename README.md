@@ -12,14 +12,18 @@ Monitored random circuits (Fisher et al., 2023, doi:10.1146/annurev-conmatphys-0
 
 ## Method
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#000000', 'lineColor': '#000000', 'secondaryColor': '#ffffff', 'tertiaryColor': '#ffffff', 'background': '#ffffff', 'noteBkgColor': '#ffffff', 'noteTextColor': '#000000', 'actorBkg': '#ffffff', 'actorBorder': '#000000', 'actorTextColor': '#000000', 'signalColor': '#000000', 'signalTextColor': '#000000', 'labelBoxBkgColor': '#ffffff', 'labelTextColor': '#000000', 'clusterBkg': '#ffffff', 'clusterBorder': '#000000'}}}%%
 flowchart LR
- A[Bell pair: ref + qubit 0] --> B[Random Sp 4,2 Clifford brickwork]
- B --> C[Z measurement, prob p]
- C --> D[Noise, prob q: dephase / erase / erase+reset]
- D -->|2L layers| B
- D --> E[Coherent information I_c = S sys - S sys+ref]
+ A["Bell pair: ref + qubit 0"] --> B["Random Sp 4,2 Clifford brickwork"]
+ B --> C["Z measurement, prob p"]
+ C --> D["Noise, prob q: dephase / erase / erase+reset"]
+ D --> EL1["2L layers"]
+ EL1 --> B
+ D --> E["Coherent information I_c = S sys - S sys+ref"]
+  classDef lbl fill:#ffffff,stroke:#ffffff,color:#000000,font-style:italic;
+  class EL1 lbl;
 ```
-Sign-free GF(2) stabiliser simulator (own code), entropy S_A = |A| − dim(G_A). Baselines: noiseless monitored circuit and unheralded channel. Details in `docs/METHOD.md`.
+Sign-free Galois field of two elements, GF(2) stabiliser simulator (own code), entropy S_A = |A| − dim(G_A). Baselines: noiseless monitored circuit and unheralded channel. Details in `docs/METHOD.md`.
 
 ## Results (all from `results/`)
 Threshold proxy p_half (L = 16, mean ± std over 4 seeds; `results/thresholds.csv`):
@@ -56,7 +60,7 @@ pytest -q
 python experiments/run_all.py --quick   # ~5 s
 python experiments/run_all.py           # 451 s (results/meta.json)
 ```
-Run on Windows 11, Python 3.11.9, CPU only.
+Run on Windows 11, Python 3.11.9, central processing unit (CPU) only.
 
 Related work by the author: [xy-mixer-vs-penalty-qaoa-noise-crossover](https://github.com/pradeepdegalaroyal/xy-mixer-vs-penalty-qaoa-noise-crossover), [QEM-ZeroNoise-Extrapolation](https://github.com/pradeepdegalaroyal/QEM-ZeroNoise-Extrapolation).
 
@@ -78,4 +82,4 @@ If you use this code, please cite it (see also `CITATION.cff`):
 }
 ```
 
-MIT license (`LICENSE`).
+Massachusetts Institute of Technology (MIT) license (`LICENSE`).
